@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Usuário - Site Responsivo Local</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="painel.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Meu Site Responsivo</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Início</a></li>
+          <li><a href="/#sobre">Sobre</a></li>
+          <li><a href="/#servicos">Serviços</a></li>
+          <li><a href="/#contato">Contato</a></li>
+          <li><a href="#" id="logout-link">Sair</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="painel-container">
+    <div class="container">
+      <div class="painel-header">
+        <h2>Painel do Usuário</h2>
+        <div id="usuario-info">
+          <p>Carregando informações do usuário...</p>
+        </div>
+      </div>
+      
+      <div class="painel-content">
+        <div class="painel-card">
+          <h3>Suas Mensagens</h3>
+          <div id="minhas-mensagens" class="mensagens-lista">
+            <p class="carregando">Carregando suas mensagens...</p>
+          </div>
+        </div>
+        
+        <div class="painel-card">
+          <h3>Enviar Nova Mensagem</h3>
+          <form id="formulario-mensagem-painel">
+            <div class="form-group">
+              <label for="mensagem">Sua mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar mensagem</button>
+          </form>
+          <div id="mensagem-sucesso" class="alerta sucesso" style="display: none;">
+            Mensagem enviada com sucesso!
+          </div>
+          <div id="mensagem-erro" class="alerta erro" style="display: none;">
+            Erro ao enviar mensagem.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 - Site Responsivo Local</p>
+    </div>
+  </footer>
+
+  <script src="painel.js"></script>
+</body>
+</html>

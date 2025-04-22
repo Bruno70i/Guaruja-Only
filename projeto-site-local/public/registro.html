@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - Site Responsivo Local</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Meu Site Responsivo</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Início</a></li>
+          <li><a href="/#sobre">Sobre</a></li>
+          <li><a href="/#servicos">Serviços</a></li>
+          <li><a href="/#contato">Contato</a></li>
+          <li><a href="/login">Login</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="auth-container">
+    <div class="auth-box">
+      <h2>Criar Conta</h2>
+      <form id="registro-form">
+        <div class="form-group">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" required minlength="6">
+          <small>Mínimo de 6 caracteres</small>
+        </div>
+        <div class="form-group">
+          <label for="confirmarSenha">Confirmar senha</label>
+          <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+        </div>
+        <button type="submit" class="btn btn-block">Registrar</button>
+      </form>
+      <div class="auth-footer">
+        <p>Já tem uma conta? <a href="/login">Faça login</a></p>
+      </div>
+      <div id="mensagem-erro" class="alerta erro" style="display: none;"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 - Site Responsivo Local</p>
+    </div>
+  </footer>
+
+  <script src="auth.js"></script>
+</body>
+</html>
