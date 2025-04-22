@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Responsivo Local</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Meu Site Responsivo</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="container">
+      <h2>Bem-vindo ao meu site!</h2>
+      <p>Um site responsivo com servidor e banco de dados locais.</p>
+      <a href="#contato" class="btn">Entre em contato</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2>Sobre</h2>
+      <div class="flex-container">
+        <div class="col">
+          <p>Este é um exemplo de site responsivo com backend Node.js e banco SQLite.</p>
+          <p>Criado para ser hospedado localmente em seu próprio computador.</p>
+        </div>
+        <div class="col">
+          <div class="feature-box">
+            <h3>Recursos</h3>
+            <ul>
+              <li>Design totalmente responsivo</li>
+              <li>Servidor Node.js</li>
+              <li>Banco de dados SQLite</li>
+              <li>Formulário de contato funcional</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="section bg-light">
+    <div class="container">
+      <h2>Serviços</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Design Web</h3>
+          <p>Criação de sites responsivos e modernos para diversos fins.</p>
+        </div>
+        <div class="card">
+          <h3>Desenvolvimento</h3>
+          <p>Desenvolvimento de aplicações web com tecnologias atuais.</p>
+        </div>
+        <div class="card">
+          <h3>Hospedagem</h3>
+          <p>Soluções de hospedagem para diferentes necessidades.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="section">
+    <div class="container">
+      <h2>Contato</h2>
+      <form id="formulario-contato">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar mensagem</button>
+      </form>
+      <div id="mensagem-sucesso" class="alerta sucesso" style="display: none;">
+        Mensagem enviada com sucesso!
+      </div>
+      <div id="mensagem-erro" class="alerta erro" style="display: none;">
+        Erro ao enviar mensagem.
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-light">
+    <div class="container">
+      <h2>Mensagens recebidas</h2>
+      <div id="lista-mensagens" class="mensagens-lista">
+        <p class="carregando">Carregando mensagens...</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 - Site Responsivo Local</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
