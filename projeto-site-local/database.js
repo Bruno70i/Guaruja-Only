@@ -1,7 +1,6 @@
-// Modificações ao database.js - Adicionando tabela de usuários
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
-const bcrypt = require('bcrypt'); // Para hash de senhas
+const bcrypt = require('bcrypt');
 const dbPath = path.resolve(__dirname, 'database', 'site.db');
 
 // Criar conexão com o banco
